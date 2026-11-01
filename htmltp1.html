@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formation en informatique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2 class="titre-formulaire">Formulaire d'inscription</h2>
+
+    <form>
+
+        <div class="groupes">
+
+            <!-- Informations personnelles -->
+            <fieldset>
+                <legend>Informations personnelles</legend>
+
+                <label for="nom">Nom *</label>
+                <input type="text"
+                       id="nom"
+                       name="nom"
+                       placeholder="Saisir votre nom"
+                       required>
+
+                <label for="prenom">Prénom *</label>
+                <input type="text"
+                       id="prenom"
+                       name="prenom"
+                       placeholder="Saisir votre prénom"
+                       required>
+
+                <label for="email">Adresse email *</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="exemple@email.com"
+                       required>
+
+                <label for="password">Mot de passe *</label>
+                <input type="password"
+                       id="password"
+                       name="password"
+                       required>
+
+                <label for="dateNaissance">Date de naissance</label>
+                <input type="date"
+                       id="dateNaissance"
+                       name="dateNaissance">
+
+                <label for="age">Âge</label>
+                <input type="number"
+                       id="age"
+                       name="age"
+                       min="18"
+                       max="60">
+
+                <label for="telephone">Téléphone</label>
+                <input type="tel"
+                       id="telephone"
+                       name="telephone">
+
+                <p class="sous-titre">Sexe</p>
+
+                <div class="choix">
+                    <label>
+                        <input type="radio"
+                               name="sexe"
+                               value="femme">
+                        Femme
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="sexe"
+                               value="homme">
+                        Homme
+                    </label>
+                </div>
+
+            </fieldset>
+
+
+            <!-- Formation -->
+            <fieldset>
+                <legend>Formation</legend>
+
+                <p class="sous-titre">Niveau d'étude</p>
+
+                <div class="choix choix-colonne">
+
+                    <label>
+                        <input type="radio"
+                               name="niveau"
+                               value="1">
+                        1ère année
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="niveau"
+                               value="2">
+                        2ème année
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="niveau"
+                               value="3">
+                        3ème année
+                    </label>
+
+                </div>
+
+                <label for="filiere">Filière *</label>
+
+                <select id="filiere" name="filiere" required>
+                    <option value="">-- Choisissez votre filière --</option>
+                    <option>Génie informatique</option>
+                    <option>Réseaux et télécommunications</option>
+                    <option>Intelligence artificielle</option>
+                    <option>Cybersécurité</option>
+                </select>
+
+                <label for="motivation">
+                    Pourquoi souhaitez-vous suivre cette formation ?
+                </label>
+
+                <textarea id="motivation"
+                          name="motivation"
+                          rows="5"></textarea>
+
+                <label for="cv">CV</label>
+
+                <input type="file"
+                       id="cv"
+                       name="cv">
+
+            </fieldset>
+
+
+            <!-- Compétences -->
+            <fieldset>
+                <legend>Compétences</legend>
+
+                <p class="sous-titre">Technologies maîtrisées</p>
+
+                <div class="choix choix-colonne">
+
+                    <label>
+                        <input type="checkbox"
+                               name="technologies"
+                               value="html">
+                        HTML
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="technologies"
+                               value="css">
+                        CSS
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="technologies"
+                               value="javascript">
+                        JavaScript
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="technologies"
+                               value="python">
+                        Python
+                    </label>
+
+                </div>
+
+                <p class="sous-titre">Domaines d'intérêt</p>
+
+                <div class="choix choix-colonne">
+
+                    <label>
+                        <input type="checkbox"
+                               name="domaines"
+                               value="web">
+                        Développement Web
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="domaines"
+                               value="reseaux">
+                        Réseaux
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="domaines"
+                               value="cybersecurite">
+                        Cybersécurité
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="domaines"
+                               value="ia">
+                        Intelligence artificielle
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+        </div>
+
+        <div class="boutons">
+            <input type="submit" value="S'inscrire">
+            <input type="reset" value="Réinitialiser">
+        </div>
+
+    </form>
+
+</body>
+</html>
