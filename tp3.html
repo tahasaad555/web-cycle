@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scriptt3.js" defer></script>
+</head>
+<body>
+
+    <button type="button" onclick="demarrer()">Commencer</button>
+
+    <br>
+    <br>
+
+    <section id="Outils de calcul ">
+
+        <label for="num"></label>
+        <input type="number" id="num" min="1" max="100">
+
+        <button type="button" id="somme" onclick=" sommeEntiers()">Calculer la somme</button>
+        <button type="button" id="Npair" onclick="nombresPairs()"> Afficher les nombres pairs </button>
+        
+        <label for="result">Resultat</label>
+        <input type="text" id="result" readonly>
+    </section>
+
+    <section id="cours"> 
+        <h2 id="titreCours">Découvrir JavaScript</h2> 
+        <p class="chapitre">Les variables</p> 
+        <p class="chapitre important">Les fonctions</p> 
+        <p class="chapitre">Les événements</p> 
+        <button type="button" id="modifier"> 
+            Modifier la présentation 
+        </button> 
+</section>
+
+<section> 
+    <h2>Zone interactive</h2> 
+    <label for="prenom">Prénom :</label>
+
+    <input type="text" id="prenom" 
+        onfocus="mettreEnEvidence(this)" 
+        onblur="retablirStyle(this)" 
+        oninput="afficherSaisie(this)">
+
+    <p id="apercu"></p> 
+
+    <button type="button" id="selectionner"> Sélectionner le texte </button>
+
+<p id="survol" onmouseover="changerCouleur(this)" onmouseout="retablirCouleur(this)"> Survolez ce texte. </p> 
+</section>
+
+<!-- //Exercice 5 -->
+
+
+<form id="formInscription" name="inscription">
+
+        
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom">
+
+        <br><br>
+
+        
+        <label for="profession">Profession :</label>
+        <select id="profession" name="profession">
+            <option value="" disabled selected>
+                Choisir une profession
+            </option>
+            <option value="Technicien">Technicien</option>
+            <option value="Ingénieur">Ingénieur</option>
+            <option value="Médecin">Médecin</option>
+        </select>
+
+        <br><br>
+
+        
+        <label>Sexe :</label>
+        <input type="radio" id="homme" name="sexe" value="H">
+        <label for="homme">H</label>
+
+        <input type="radio" id="femme" name="sexe" value="F">
+        <label for="femme">F</label>
+
+        <br><br>
+
+        
+        <label>Langues :</label>
+        <input type="checkbox" id="arabe" name="langue" value="Arabe">
+        <label for="arabe">Arabe</label>
+
+        <input type="checkbox" id="francais" name="langue" value="Français">
+        <label for="francais">Français</label>
+
+        <br><br>
+
+        
+        <button type="submit">Inscrire</button>
+        <button type="reset">Effacer</button>
+
+    </form>
+
+    
+    <h3>Message</h3>
+    <div id="message"></div>
+
+    
+    <h3>Récapitulatif</h3>
+    <div id="recapitulatif"></div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
